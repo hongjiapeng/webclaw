@@ -11,3 +11,7 @@ count.txt
 .output
 .vinxi
 todos.json
+
+# Lock files from other package managers (this project uses pnpm)
+package-lock.json
+yarn.lock
