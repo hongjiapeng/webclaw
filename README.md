@@ -51,6 +51,40 @@ pnpm dev
 
 The app will be available at `http://localhost:3000`
 
+## Development
+
+### Local Development
+
+```bash
+pnpm dev
+```
+
+This starts the dev server on `localhost` only.
+
+### LAN Access (Allow access from other devices on your network)
+
+**Option 1: Using the npm script (recommended)**
+```bash
+pnpm -C apps/webclaw dev:host
+```
+
+**Option 2: Using environment variable**
+
+Add to `apps/webclaw/.env.local`:
+```bash
+VITE_HOST=0.0.0.0
+```
+
+Then run `pnpm dev` as usual.
+
+The server will be accessible at:
+- `http://localhost:3000` (local)
+- `http://192.168.x.x:3000` (LAN - use your machine's IP address)
+
+To find your IP address:
+- **Windows**: `ipconfig` (look for IPv4 Address)
+- **macOS/Linux**: `ifconfig` or `ip addr`
+
 ## Troubleshooting
 
 **Connection issues**: Make sure your OpenClaw Gateway is running and the credentials in `.env.local` match your gateway configuration.
