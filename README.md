@@ -8,7 +8,28 @@ Fast web client for OpenClaw.
 
 Currently in beta.
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) 18 or higher
+- [pnpm](https://pnpm.io/) 9.x
+
+If you don't have pnpm installed, you can install it with:
+
+```bash
+npm install -g pnpm
+```
+
 ## Setup
+
+### Quick Start (Recommended)
+
+```bash
+node setup.js
+```
+
+This will check prerequisites, install dependencies, and guide you through the setup.
+
+### Manual Setup
 
 1. Create `apps/webclaw/.env.local` with your gateway credentials:
 
